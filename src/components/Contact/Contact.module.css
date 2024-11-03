@@ -1,0 +1,275 @@
+@import "../../vars.css";
+
+.containerContact {
+  background: var(--color-bg);
+  margin-top: 30px;
+  color: var(--color-text);
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  animation: RevealText 3s steps(10, end);
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size: 40px;
+  overflow: hidden;
+  position: relative;
+  white-space: no-wrap;
+  width: 330px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+  background: linear-gradient(
+    90deg,
+    rgb(163, 255, 249) 0%,
+    rgb(163, 215, 255) 48%,
+    rgb(163, 169, 255) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@keyframes RevealText {
+  from {
+    width: 0;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.subTitle {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: var(--font-roboto);
+  color: var(--color-text);
+  margin-top: 20px;
+}
+
+.arrowIconLeft {
+  font-size: 4rem;
+  color: var(--color-primary);
+  animation: slideIn 4s Infinite;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-610%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(2%);
+  }
+}
+
+.arrowIconRight {
+  font-size: 4rem;
+  color: var(--color-tertiary);
+  animation: slide 4s infinite;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(600%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(2%);
+  }
+}
+
+.contactIcons a {
+  font-size: 2rem;
+  color: var(--color-text);
+  margin-top: 0;
+}
+
+.containerForm {
+  margin-bottom: 30px;
+  color: var(--color-text);
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.divForm {
+  background: linear-gradient(
+    90deg,
+    rgb(163, 255, 249) 0%,
+    rgb(163, 215, 255) 48%,
+    rgb(163, 169, 255) 100%
+  );
+  padding: 20px 40px;
+  margin: auto;
+  filter: drop-shadow(20px 20px 5px rgba(0, 0, 0, 0.5));
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgb(3, 3, 5);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.formTitle {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: var(--font-roboto);
+  color: var(--color-text);
+  background: transparent;
+  margin-bottom: 10px;
+}
+
+.sendIcon {
+  background: transparent;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  gap: 5px;
+}
+
+.row {
+  width: 100%;
+  min-height: 100px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  background: linear-gradient(
+    90deg,
+    rgb(163, 255, 249) 0%,
+    rgb(163, 215, 255) 48%,
+    rgb(163, 169, 255) 100%
+  );
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.label {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-family: var(--font-roboto);
+  color: var(--color-text);
+  background-color: transparent;
+}
+
+.inputs,
+.textarea {
+  border-style: none;
+  border-radius: 10px;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 2px 2px 1px 1px rgb(3, 3, 5);
+}
+
+.textarea {
+  min-height: 100px;
+  resize: none;
+  width: 250px;
+}
+
+.send {
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    rgb(163, 255, 249) 0%,
+    rgb(163, 215, 255) 48%,
+    rgb(163, 169, 255) 100%
+  );
+  color: var(--color-text);
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 5px 36px;
+  box-shadow: 5px 5px 5px 2px rgb(3, 3, 5);
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 13%;
+  background: transparent;
+}
+
+.status {
+  background: transparent;
+  color: var(--color-bg);
+  font-size: 13px;
+  text-align: center;
+  width: 150px;
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width: 830px) {
+  .arrowIconRight {
+    font-size: 2rem;
+  }
+
+  .arrowIconLeft {
+    font-size: 2rem;
+  }
+
+  .subTitle {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .divForm {
+    padding: 10px 20px;
+  }
+
+  .form {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    gap: 0;
+  }
+
+  .formTitle {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .textarea {
+    width: 200px;
+    height: auto;
+    resize: none;
+    bottom: 10px;
+  }
+
+  .inputs,
+  .textarea {
+    margin-bottom: 10px;
+    padding: 3px;
+  }
+
+  .btn {
+    margin: auto;
+  }
+
+  .send {
+    margin: auto;
+  }
+}
