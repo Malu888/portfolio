@@ -19,8 +19,6 @@ function Contact() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const response = { ok: true };
-
     if (response.ok) {
       setStatus('Email sent successfuly')
       setMessage('')
@@ -49,8 +47,8 @@ function Contact() {
       <section className={styles.containerForm}>
         <div className={styles.divForm}>
           <p className={styles.formTitle}>Send me an email <MdOutlineMarkEmailRead className={styles.sendIcon} /></p>
-          <form name='contact' onSubmit={handleSubmit} className={styles.form} netlify>
-            <input type="hidden" name="form-name" value="contact" />
+          <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit} className={styles.form}>
+          <input type="hidden" name="form-name" value="contact" />
             <div className={styles.column}>
               <label className={styles.label}>Name</label>
               <input type='text' name='name' value={name} onChange={(e) => setName(e.target.value)} required className={styles.inputs}></input>
