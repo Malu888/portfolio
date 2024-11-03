@@ -7,6 +7,21 @@
     <title>Vite + React</title>
   </head>
   <body>
+
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <div>
+        <label >Name</label>
+        <input type='text' name='name' required></input>
+        <label>Email</label>
+        <input type='email' name='email' required ></input>
+      </div>
+      <div >
+        <label className={styles.label}>Message</label>
+        <textarea type='text' name='message' required ></textarea>
+      </div>
+      
+
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

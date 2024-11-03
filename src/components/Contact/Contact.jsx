@@ -10,21 +10,6 @@ import { useState } from 'react';
 import styles from './Contact.module.css'
 
 function Contact() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
-  const [status, setStatus] = useState('')
-
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
-      setStatus('Email sent successfuly')
-      setMessage('')
-      setEmail('')
-      setName('')
-
-  }
 
   return (
     <>
@@ -43,30 +28,22 @@ function Contact() {
       <section className={styles.containerForm}>
         <div className={styles.divForm}>
           <p className={styles.formTitle}>Send me an email <MdOutlineMarkEmailRead className={styles.sendIcon} /></p>
-          <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit} className={styles.form}>
-          <input type="hidden" name="form-name" value="contact" />
+
+
+          <form name="contact" action="/contact" method="post" data-netlify="true" className={styles.form}>
+          <input type="hidden" name="form-name" value="contact"/>
             <div className={styles.column}>
               <label className={styles.label}>Name</label>
-              <input type='text' name='name' value={name} onChange={(e) => setName(e.target.value)} required className={styles.inputs}></input>
+              <input type='text' name='name' required className={styles.inputs}></input>
               <label className={styles.label}>Email</label>
-              <input type='email' name='email' value={email} onChange={(e) => setEmail(e.target.value)} required className={styles.inputs}></input>
+              <input type='email' name='email' required className={styles.inputs}></input>
             </div>
             <div className={styles.row}>
               <label className={styles.label}>Message</label>
-              <textarea type='text' name='message' value={message} onChange={(e) => setMessage(e.target.value)} required className={styles.textarea}></textarea>
+              <textarea type='text' name='message' required className={styles.textarea}></textarea>
             </div>
             <div className={styles.btn}>
               <button type="submit" className={styles.send}>Send</button>
-              {status && (
-                <p className={styles.status}>
-                  {status}
-                  {status.includes('successfuly') ? (
-                    <BsEmojiSmileUpsideDown className={styles.sendIcon} />
-                  ) : (
-                    <PiSmileyXEyes className={styles.sendIcon} />
-                  )}
-                </p>
-              )}
 
             </div>
 
