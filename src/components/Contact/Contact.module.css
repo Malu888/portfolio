@@ -237,10 +237,24 @@
 
   .divForm {
     padding: 10px 15px;
+    box-shadow: none;
+    border: none;
+    background: transparent;
   }
 
   .containerForm {
-    padding-bottom: 30px;
+    background: linear-gradient(
+    90deg,
+    rgb(163, 255, 249) 0%,
+    rgb(163, 215, 255) 48%,
+    rgb(163, 169, 255) 100%
+  );
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  border: 1px dotted black;
+  height: 400px;
   }
 
   .form {
@@ -249,6 +263,7 @@
     margin: auto;
     align-items: center;
     gap: 0;
+    background: transparent;
   }
 
   .formTitle {
@@ -257,18 +272,20 @@
   }
 
   .textarea {
-    width: 200px;
-    max-height: 50px;
-    resize: none;
     margin-bottom: 10px;
     margin-top: 10px;
     border-radius: 5px;
+
+    min-height: 50px;
+  resize: none;
+  width: 180px;
   }
 
   .inputs {
     margin-bottom: 10px;
     padding: 3px;
     border-radius: 5px;
+  width: 180px;
   }
 
   .btn {
