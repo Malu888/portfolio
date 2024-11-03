@@ -21,7 +21,8 @@ white-space: no-wrap;
 width: 330px;
 margin: auto;
 text-align: center;
-margin-bottom: 30px;
+margin-bottom: 20px;
+margin-top: 25px;
 background: linear-gradient(
     90deg,
     rgb(163, 255, 249) 0%,

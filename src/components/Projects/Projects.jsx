@@ -6,7 +6,7 @@ import projects from '../../../data/projects.json'
 function Projects() {
   return (
     <section className={styles.container} id="projects">
-      <h2 className={styles.title}> Projects</h2>
+      <h2 className={styles.title}> Projects.</h2>
       <div className={styles.cardContainer}>
       {projects.map((eachProject, i) => (
 <div key={i} className={styles.card}>
