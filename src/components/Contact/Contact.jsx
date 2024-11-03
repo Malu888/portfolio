@@ -49,7 +49,7 @@ function Contact() {
       <section className={styles.containerForm}>
         <div className={styles.divForm}>
           <p className={styles.formTitle}>Send me an email <MdOutlineMarkEmailRead className={styles.sendIcon} /></p>
-          <form name='contact' method='POST' data-netlify="true" onSubmit={handleSubmit} className={styles.form}>
+          <form name='contact' onSubmit={handleSubmit} className={styles.form} netlify>
             <input type="hidden" name="form-name" value="contact" />
             <div className={styles.column}>
               <label className={styles.label}>Name</label>
