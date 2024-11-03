@@ -19,14 +19,10 @@ function Contact() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    if (response.ok) {
       setStatus('Email sent successfuly')
       setMessage('')
       setEmail('')
       setName('')
-    } else {
-      setStatus('Error sending email')
-    }
 
   }
 
