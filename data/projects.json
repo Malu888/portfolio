@@ -2,31 +2,33 @@
   {
     "title": "InmoLux",
     "imageSrc":"https://i.imgur.com/XxayMH7.png",
-    "description": "The client interface was built using JavaScript and React for an intuitive experience. It integrates Leaflet for interactive maps and Cloudinary for image management. The backend is built with Node.js, Express.js, and MongoDB, ensuring efficient communication between server and client. Web application developed in collaboration with Gemma Fernandez.",
+    "description": "The client interface was built with JavaScript and React for an intuitive user experience. This project uses Leaflet for interactive maps and Cloudinary for image management. The application follows the MERN stack, with Node.js and Express.js powering the backend API and MongoDB as the database, ensuring efficient communication between server and client. Developed in collaboration with Gemma Fernandez.",
     "skills": [
-      "JavaScript",
-      "React",
-      "Leaflet",
-      "Cloudinary",
-      "React Context API",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT"
+      "JavaScript |",
+      "React |",
+      "Bootstrap |",
+      "CSS |",
+      "Cloudinary |",
+      "Leaflet |",
+      "Node.js |",
+      "Express.js |",
+      "MongoDB |",
+      "JWT |"
     ],
     "demo": "https://inmolux.netlify.app/"
   },
   {
     "title": "ClickArte",
     "imageSrc": "https://i.imgur.com/L2FND3f.png",
-    "description": "It uses React to build the user interface and Bootstrap for responsive layouts. The backend is built with Node.js. The application implements CRUD operations for image management and uses the React Context API for efficient state management between components. This project was developed by me in partnership with Samuel Angulo.",
+    "description": "The user interface is built with React for interactivity and Bootstrap for responsive layouts, while the backend is powered by Node.js. The application supports full CRUD functionality for image management and integrates React Context API for efficient state management across components. This project was developed by me in partnership with Samuel Angulo.",
     "skills": [
-      "JavaScript",
-      "React",
-      "Bootstrap",
-      "Node.js",
-      "CRUD",
-      "React Context API"
+      "JavaScript |",
+      "React |",
+      "Bootstrap |",
+       "CSS |",
+      "Node.js |",
+      "CRUD |"
+     
     ],
     "demo": "https://clickarte.netlify.app/"
   }

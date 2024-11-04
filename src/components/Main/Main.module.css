@@ -37,6 +37,10 @@
   -webkit-background-clip: text;
 }
 
+.title:hover {
+  text-shadow: 0 0 5px #ff38ac;
+}
+
 .icondev {
   color: white;
 }

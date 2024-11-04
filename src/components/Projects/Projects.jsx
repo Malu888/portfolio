@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './Projects.module.css'
 import projects from '../../../data/projects.json'
+import { VscVerifiedFilled } from "react-icons/vsc";
+
 
 
 function Projects() {
@@ -13,7 +15,10 @@ function Projects() {
 <h2 className={styles.titleProjects}>{eachProject.title}</h2>
 <img src={eachProject.imageSrc} alt={eachProject.title} className={styles.image}/>
 <p className={styles.description}>{eachProject.description}</p>
-<p className={styles.description}>{eachProject.skils}</p>
+<div className={styles.skills}>
+<h4 className={styles.titleSkills}>Skills <VscVerifiedFilled /></h4>
+<p className={styles.contentSkills}>{eachProject.skills}</p>
+</div>
 <a href={eachProject.demo} target="_blank" className={styles.link}>Take a look</a>
 </div>
       ))}
