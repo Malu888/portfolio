@@ -103,16 +103,9 @@
     flex-direction: row;
     gap: 15px;
     border-radius: 10px;
-    background: rgba(239, 248, 255, 0.445);
-    background: linear-gradient(
-      0deg,
-      rgba(239, 248, 255, 0.205) 0%,
-      rgb(239,248,255) 100%
-    );
-    box-shadow: 5px 5px 5px 5px rgb(205, 208, 247) ;
-    padding: 5px 3px;
-    margin-right:14px;
-    top: 50px;
+    background: rgba(239, 248, 255, 0);
+    padding: 5px;
+    top: 40px;
     width: 350px;
   }
 

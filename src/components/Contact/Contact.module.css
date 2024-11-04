@@ -14,7 +14,7 @@
   animation: RevealText 3s steps(10, end);
   display: inline-block;
   letter-spacing: 1px;
-  font-size: 40px;
+  font-size: 30px;
   overflow: hidden;
   position: relative;
   white-space: nowrap;
@@ -22,14 +22,6 @@
   margin: auto;
   text-align: center;
   margin-bottom: 30px;
-  background: linear-gradient(
-    90deg,
-    rgb(163, 255, 249) 0%,
-    rgb(163, 215, 255) 48%,
-    rgb(255, 255, 255) 100%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
 }
 
 @keyframes RevealText {
@@ -219,7 +211,6 @@
   margin-top: 10px;
 }
 
-
 @media screen and (max-width: 830px) {
   .arrowIconRight {
     font-size: 2rem;
@@ -243,17 +234,17 @@
 
   .containerForm {
     background: linear-gradient(
-    90deg,
-    rgb(163, 255, 249) 0%,
-    rgb(163, 215, 255) 48%,
-    rgb(163, 169, 255) 100%
-  );
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  margin-top: 20px;
-  border: 1px dotted black;
-  height: 400px;
+      90deg,
+      rgb(163, 255, 249) 0%,
+      rgb(163, 215, 255) 48%,
+      rgb(163, 169, 255) 100%
+    );
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    border: 1px dotted black;
+    height: 400px;
   }
 
   .form {
@@ -276,15 +267,15 @@
     border-radius: 5px;
 
     min-height: 50px;
-  resize: none;
-  width: 180px;
+    resize: none;
+    width: 180px;
   }
 
   .inputs {
     margin-bottom: 10px;
     padding: 3px;
     border-radius: 5px;
-  width: 180px;
+    width: 180px;
   }
 
   .btn {

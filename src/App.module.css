@@ -5,11 +5,11 @@ body, html, #root {
     padding: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    position: fixed;
+    overflow-y: auto;
+    position: relative;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 0;
   }
 
   body{
@@ -17,7 +17,7 @@ body, html, #root {
     background-size: cover;
     background-position: center;
    position: relative;
-    z-index: -1;
+ 
 }
 
 body::before {
