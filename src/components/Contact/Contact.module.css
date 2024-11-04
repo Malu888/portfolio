@@ -1,7 +1,6 @@
 @import "../../vars.css";
 
 .containerContact {
-  background: var(--color-bg);
   margin-top: 30px;
   color: var(--color-text);
   margin-left: 10%;
@@ -18,7 +17,7 @@
   font-size: 40px;
   overflow: hidden;
   position: relative;
-  white-space: no-wrap;
+  white-space: nowrap;
   width: 330px;
   margin: auto;
   text-align: center;
@@ -27,7 +26,7 @@
     90deg,
     rgb(163, 255, 249) 0%,
     rgb(163, 215, 255) 48%,
-    rgb(163, 169, 255) 100%
+    rgb(255, 255, 255) 100%
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;

@@ -9,7 +9,7 @@ function App() {
   
 
   return (
-    <div className={styles.App}>
+      <div className={styles.content}>
       <Navbar/>
       <Routes>
       <Route path='/' element={<Main/>}/>

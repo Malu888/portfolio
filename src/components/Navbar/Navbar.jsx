@@ -14,7 +14,7 @@ function Navbar() {
     return (
         <nav className={styles.navbar}>
             <a className={styles.title} href='/'>
-               Portfolio
+               Portfolio.
             </a>
             <div className={styles.menu}>
                 {menuOpen ? (
@@ -24,7 +24,6 @@ function Navbar() {
                     <ul className={ `${styles.menuItems} ${menuOpen ? styles.menuOpen : ''}`} onClick={ () => setMenuOpen(false)}>
                         <li><a href='projects'>Projects</a></li>
                         <li><a href='contact'>Contact</a></li>
-                        <a href="malu-dietrich-cv.pdf" download className={styles.downloadButton}>Download CV</a>
                     </ul>
             </div>
         </nav>

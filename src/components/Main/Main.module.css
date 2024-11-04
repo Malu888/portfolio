@@ -3,6 +3,7 @@
 .container {
   position: relative;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: space-between;
   margin-top: 49px;
@@ -14,87 +15,102 @@
 .content p {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   color: var(--color-text);
   z-index: 1;
 }
 
 .title {
-  font-size: 72px;
-  font-weight: 900;
+  font-size: 50px;
+  font-weight: 800;
   margin-bottom: 33px;
+  margin-top: 33px;
+  text-align: center;
   font-family: var(--font-roboto);
   background: linear-gradient(
     90deg,
     rgb(163, 255, 249) 0%,
     rgb(163, 215, 255) 48%,
-    rgb(163, 169, 255) 100%
+    rgb(255, 255, 255) 100%
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
+.icondev {
+  color: white;
+}
+
 .description {
-  font-size: 16px;
+  font-size: 20px;
   font-family: var(--font-roboto);
   margin-bottom: 52px;
   line-height: 1.5rem;
  text-align: left;
 }
 
-.contactBtn {
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.downloadButton {
+  box-shadow: 0 0 5px #35abff, 0 0 10px #35abff, 0 0 15px #35abff;
   text-decoration: none;
-  background: linear-gradient(
-    90deg,
-    rgb(163, 255, 249) 0%,
-    rgb(163, 215, 255) 48%,
-    rgb(163, 169, 255) 100%
-  );
-  color: var(--color-text);
-  border-radius: 100px;
-  margin-right: 30px;
+  background: transparent;
+  color: #ff38ac;
+  text-shadow: 0 0 5px #ff38ac;
+  border-radius: 10px;
   font-size: 20px;
-  font-weight: 600;
-  padding: 10px 16px;
-  box-shadow: 5px 5px 5px 5px rgb(205, 208, 247) ;
-  position: relative;
+  padding: 8px 10px;
   overflow: hidden;
-  z-index: 1;
- 
+  border: 2px solid rgba(255, 56, 172, 0.1); 
+  cursor: pointer;
+  transition: all 0.5s ease; 
+}
+.downloadButton:hover {
+  box-shadow: 0 0 10px #35abff, 0 0 20px #35abff, 0 0 30px #35abff;
+  background-color: rgba(255, 56, 172, 0.1);
+  color: #35abff;
 }
 
-.contactBtn::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  width: calc(100% + 10px);
-  height: calc(100% + 10px);
-  border-radius: 100px;
-  background: linear-gradient(90deg, rgba(163,215,255,1) 24%, rgba(163,169,255,1) 61%, rgba(163,255,249,1) 91%);
-  z-index: -1;
-  background-size: 300%;
-  animation: AnimaBorda 8s linear infinite;
+.contactBtn{
+  box-shadow: 0 0 5px #ff38ac, 0 0 10px #ff38ac, 0 0 15px #ff38ac;
+  text-decoration: none;
+  background: transparent;
+  color: #35abff;
+  text-shadow: 0 0 5px #35abff;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 8px 10px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 56, 172, 0.1); 
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s ease; 
 }
 
-@keyframes AnimaBorda{
-    0%{
-background-position: 0;
-    }
-    100%{
-background-position: 300%;
-    }
+.contactBtn:hover {
+  box-shadow: 0 0 10px #ff38ac, 0 0 20px #ff38ac, 0 0 30px #ff38ac;
+  background-color: rgba(255, 56, 172, 0.1);
+  color: #ff38ac;
 }
 
 .myPhoto {
-  width: 30%;
+  width: 20%;
   z-index: 1;
   border-radius: 50%;
-  box-shadow: 5px 5px 5px 5px rgb(205, 208, 247) ;
+  padding: 5px;
+  /*box-shadow: 0 0 10px #ff38ac, 0 0 10px #ff38ac;*/
+  transition: box-shadow 0.3s ease;
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
 
 @keyframes floating {
@@ -109,6 +125,7 @@ background-position: 300%;
   }
 }
 
+
 @media screen and (max-width: 830px) {
   .container{
     flex-direction: column-reverse;
@@ -122,16 +139,21 @@ background-position: 300%;
   }
 
   .title{
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .buttons{
+    margin-top: 30%;
   }
 
   .description {
     font-size: 10px;
     line-height: 1.5rem;
    text-align: center;
+    margin-bottom: 40px;
   }
 
   .myPhoto{
@@ -139,11 +161,8 @@ background-position: 300%;
     margin-top: 1rem;
   }
 
-  .contactBtn{
-    font-size: 20px;
-left: 7rem;
-top: 10px;
-margin-bottom: 20px;
+  .contactBtn, .downloadButton{
+    font-size: 19px;
   }
 }
 
