@@ -14,7 +14,7 @@ function Main() {
         <Link to='./contact' className={styles.contactBtn}>
           Contact Me
         </Link>
-        <a href="malu-dietrich-cv.pdf" download className={styles.downloadButton}>My resume</a>
+        <a href="resume-malu-dietrich.pdf" download className={styles.downloadButton}>My resume</a>
         </div>
       </div>
       <img src={myPhoto} alt='Malu Dietrich Photo' className={styles.myPhoto} />
