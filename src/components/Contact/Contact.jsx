@@ -44,7 +44,6 @@ function Contact() {
             </div>
             <div className={styles.btn}>
               <button type="submit" className={styles.send}>Send</button>
-
             </div>
 
           </form>

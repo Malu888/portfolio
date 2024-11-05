@@ -3,8 +3,7 @@
 .containerContact {
   margin-top: 30px;
   color: var(--color-text);
-  margin-left: 10%;
-  margin-right: 10%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,15 +90,18 @@
 }
 
 .containerForm {
-  margin-top: 60px;
-  margin-left: 25%;
-  background-color: rgba(255, 56, 172, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   position: relative;
   z-index: 1;
   overflow-y: hidden;
-  width: 50%;
-  height: auto;
+  width: 60vw;
+  height: 35vh;
+  display: flex;
+align-items: center;
+justify-content: center;
+margin: 40px auto 0 auto;
+padding: 20px 5px;
 }
 
 .containerForm::before {
@@ -107,46 +109,40 @@
   position: absolute;
   background-color: #ff38ac;
   box-shadow: 0 0 5px #ff38ac, 0 0 10px #ff38ac, 0 0 15px #ff38ac;
-  width: 660px;
-  height: 65%;
-  display: flex;
-  align-items: center;
-  margin: auto;
-  margin-top: 30px;
+  width: 90%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
   border-radius: 10px;
+  transform: translate(-50%, -50%) rotate(0deg);
   z-index: -1;
-  animation: animate 3s infinite;
+  overflow: hidden;
+  animation: animate 3s infinite linear;
  
 }
 @keyframes animate {
  100% {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg) ;
   }
 }
 .containerForm::after {
   content: '';
-  background-color: rgb(0, 0, 0);
+  background-color: #33293f;
   position: absolute;
   inset: 5px;
   border-radius: inherit;
   z-index: -1;
+  
 }
 
 .divForm {
-  
-  padding: 20px 40px;
-  margin: auto;
- 
-  margin-top: 30px;
+  padding: 20px 30px;
   border-radius: 10px;
-  
-  
 }
 
 
 
 .formTitle {
-  font-size: 20px;
   letter-spacing: 1px;
   font-family: var(--font-roboto);
   color: var(--color-text);
@@ -166,19 +162,18 @@
 }
 
 .row {
-  width: 100%;
-  min-height: 100px;
+  max-width: 90%;
+  min-height: 90px;
   background: transparent;
   display: flex;
   flex-direction: column;
 }
 
 .form {
-  
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .label {
@@ -189,20 +184,24 @@
   background-color: transparent;
 }
 
-.inputs,
-.textarea {
+.inputs {
   border-style: none;
   border-radius: 10px;
-  padding: 8px;
+  padding: 5px;
   text-align: center;
+  max-width: 200px;
   border: 1px solid rgb(0, 0, 0);
   box-shadow: 2px 2px 1px 1px rgb(3, 3, 5);
 }
 
 .textarea {
-  min-height: 100px;
+  min-height: 80px;
+  min-width: 200px;
   resize: none;
-  width: 250px;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 2px 2px 1px 1px rgb(3, 3, 5);
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .send {
@@ -224,94 +223,74 @@
 
 .btn {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   margin-top: 13%;
   background: transparent;
+  margin-right: 0;
 }
 
-.status {
-  background: transparent;
-  color: var(--color-bg);
-  font-size: 13px;
-  text-align: center;
-  width: 150px;
-  margin-top: 10px;
-}
 
-@media screen and (max-width: 830px) {
-  .arrowIconRight {
-    font-size: 2rem;
+@media (max-width: 830px) {
+  .containerForm {
+    width: 68vw;
+    height: 57vh;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding-top: 0;
   }
 
-  .arrowIconLeft {
-    font-size: 2rem;
-  }
+  .containerForm::before {
+     width: 60%;
+     height: 200%;
+     margin-top: 0;
+   }
 
-  .subTitle {
-    font-size: 16px;
-    margin-top: 5px;
+  .form {
+    width: 60vw;
+    height: 35vh;
+    margin-top: 0;
   }
 
   .divForm {
-    padding: 10px 15px;
-    box-shadow: none;
-    border: none;
-    background: transparent;
-  }
-
-  .containerForm {
-    background: linear-gradient(
-      90deg,
-      rgb(163, 255, 249) 0%,
-      rgb(163, 215, 255) 48%,
-      rgb(163, 169, 255) 100%
-    );
-    width: 100%;
     padding: 0;
     margin: 0;
-    margin-top: 20px;
-    border: 1px dotted black;
-    height: 400px;
+  }
+
+  .row {
+    max-width: 100%;
+    min-height: 100px;
+    flex-direction: column;
   }
 
   .form {
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
     align-items: center;
-    gap: 0;
-    background: transparent;
+    gap: 15px;
   }
 
   .formTitle {
-    font-size: 15px;
-    text-align: center;
+    margin-top: 10px;
+   text-align: center;
   }
 
   .textarea {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-
-    min-height: 50px;
-    resize: none;
-    width: 180px;
-  }
-
-  .inputs {
-    margin-bottom: 10px;
-    padding: 3px;
-    border-radius: 5px;
-    width: 180px;
+   margin-bottom: 0;
   }
 
   .btn {
-    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    margin-top: 10px;
   }
+  
 
-  .send {
-    margin: auto;
-  }
 }
+
+
+
+
+
+
