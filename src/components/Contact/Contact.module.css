@@ -98,15 +98,14 @@
   width: 50vw;
   height: 30vh;
   display: flex;
-align-items: center;
-justify-content: center;
-margin: 40px auto 0 auto;
-min-width: 558px;
-
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto 0 auto;
+  min-width: 558px;
 }
 
 .containerForm::before {
- content: '';
+  content: "";
   position: absolute;
   background: #ff38ac;
   box-shadow: 0 0 5px #ff38ac, 0 0 10px #ff38ac, 0 0 15px #ff38ac;
@@ -117,17 +116,16 @@ min-width: 558px;
   border-radius: 10px;
   transform: translate(-50%, -50%) rotate(0deg);
   z-index: -1;
- 
+
   animation: animate 3s infinite linear;
- 
 }
 @keyframes animate {
- 100% {
-    transform: translate(-50%, -50%) rotate(360deg) ;
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 .containerForm::after {
-  content: '';
+  content: "";
   background-color: #33293f;
   position: absolute;
   inset: 3px;
@@ -136,11 +134,9 @@ min-width: 558px;
 }
 
 .divForm {
- min-width: 500px;
+  min-width: 500px;
   border-radius: 10px;
 }
-
-
 
 .formTitle {
   letter-spacing: 1px;
@@ -214,11 +210,11 @@ min-width: 558px;
   font-size: 16px;
   padding: 5px 20px;
   overflow: hidden;
-  border: 2px solid rgba(255, 56, 172, 0.1); 
+  border: 2px solid rgba(255, 56, 172, 0.1);
   cursor: pointer;
   text-align: center;
   bottom: 30px;
-  transition: all 0.5s ease; 
+  transition: all 0.5s ease;
 }
 
 .btn {
@@ -231,22 +227,21 @@ min-width: 558px;
   margin-right: 0;
 }
 
-
 @media (max-width: 768px) {
   .containerForm {
     width: 68vw;
     height: 57vh;
-   
+
     margin-top: 0;
     padding-top: 0;
     min-width: 200px;
   }
 
   .containerForm::before {
-     width: 60%;
-     height: 200%;
-     margin-top: 0;
-   }
+    width: 60%;
+    height: 200%;
+    margin-top: 0;
+  }
 
   .form {
     width: 60vw;
@@ -275,11 +270,11 @@ min-width: 558px;
 
   .formTitle {
     margin-top: 10px;
-   text-align: center;
+    text-align: center;
   }
 
   .textarea {
-   margin-bottom: 0;
+    margin-bottom: 0;
   }
 
   .btn {
@@ -288,15 +283,4 @@ min-width: 558px;
     margin: 0;
     margin-top: 10px;
   }
-  
-
 }
-
-
-
-
-
-
-
-
-

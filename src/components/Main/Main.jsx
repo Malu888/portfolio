@@ -8,13 +8,13 @@ function Main() {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Malú Dietrich <VscCode className={styles.icondev}/></h1>
+        <h1 className={styles.title}>Hi, I'm Malú Dietrich <VscCode className={styles.icondev} /></h1>
         <p className={styles.description}>Junior Full-Stack developer based in Seville.</p>
         <div className={styles.buttons}>
-        <Link to='./contact' className={styles.contactBtn}>
-          Contact Me
-        </Link>
-        <a href="resume-malu-dietrich.pdf" download className={styles.downloadButton}>My resume</a>
+          <Link to='./contact' className={styles.contactBtn}>
+            Contact Me
+          </Link>
+          <a href="resume-malu-dietrich.pdf" download className={styles.downloadButton}>My resume</a>
         </div>
       </div>
       <img src={myPhoto} alt='Malu Dietrich Photo' className={styles.myPhoto} />

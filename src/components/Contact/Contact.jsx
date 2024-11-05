@@ -4,9 +4,6 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
-import { BsEmojiSmileUpsideDown } from "react-icons/bs";
-import { PiSmileyXEyes } from "react-icons/pi";
-import { useState } from 'react';
 import styles from './Contact.module.css'
 
 function Contact() {
@@ -31,7 +28,7 @@ function Contact() {
 
 
           <form name="contact" action="/contact" method="post" data-netlify="true" className={styles.form}>
-          <input type="hidden" name="form-name" value="contact"/>
+            <input type="hidden" name="form-name" value="contact" />
             <div className={styles.column}>
               <label className={styles.label}>Name</label>
               <input type='text' name='name' required className={styles.inputs}></input>
